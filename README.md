@@ -14,7 +14,7 @@ My code for this be found in [Crypto_Clustering.ipynb](Crypto_Clustering.ipynb)
    
 3. I then fit the scaled data with a k-means model with 4 clusters, in order to cluster the different crypto currencies into 4 groups. I plotted the groups in a scatter plot.
 
-4. I then used Principal Component Analysis (PCA) to reduce the features of the scaled dataframe down to 3. The explained variance of these three features was 89.5%.
+4. I then used Principal Component Analysis (PCA) to reduce the features of the scaled dataframe down to 3. The explained variance of these three features was 89.5%. (Dimensionality reduction with PCA is a statistical technique used to reduce the number of dimensions (features) in a dataset while retaining most of the variation or information present in the original data. The goal is to simplify the dataset, making it easier to visualize or analyze, without losing too much important information. Preserving 89.5% of the variance, the number of features was reduced from 7 to 3).
 
 5. Now using the PCA data, I repeated the process of creating an elbow plot to find the best value of `k`. Again, the best value for `k` appears to be 4. 
 
