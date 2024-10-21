@@ -9,7 +9,7 @@ In this challenge, we used our knowledge of Python and unsupervised learning wit
 1. I used the `StandardScaler()` module from `scikit-learn` to normalize the data.
 
 2. Using the scaled data, I performed a cluster analysis with K-means. K-Means is a classical clustering algorithm that partitions data into a predefined number of clusters based on similarity (usually measured by Euclidean distance). It tries to minimize the variance within each cluster. The K-Means cluster analysis entailed:
-   - Using a for loop to determine the inertia for each `k` between 1 through 10.
+   - Using a for loop to determine the inertia for each `k` between 1 through 11.
    - Creating an elbow plot of inertia against the number of clusters.
    - Determining where the "elbow" of the plot is, and at which value of `k` it appears (`k`=4).
 
