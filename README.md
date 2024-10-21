@@ -19,7 +19,7 @@ In this challenge, we used our knowledge of Python and unsupervised learning wit
 
 4. I then used Principal Component Analysis (PCA) to reduce the features of the scaled dataframe down to 3. The explained variance of these three features was 89.5%. (Some more detail: Dimensionality reduction with PCA is a statistical technique used to reduce the number of dimensions (features) in a dataset while retaining most of the variation or information present in the original data. The goal is to simplify the dataset, making it easier to visualize or analyze, without losing too much important information. Preserving 89.5% of the variance, the number of features was reduced from 7 to 3).
 
-5. Although it as not required, I creating a loadings matrix to see how much each original feature contributes to each principal component. A higher absolute value of a loading indicates a stronger contribution. The following table indicates that the 200-day and 1-year contribute most to PC1 while the 14-day and 30-day contribute most to PC2.
+5. Although it as not required, I creating a loadings matrix to see how much each original feature contributes to each principal component. A higher absolute value of a loading indicates a stronger contribution. The following table indicates that the 200-day and 1-year contribute most to PC1 while the 14-day and 30-day contribute most to PC2. The 24-hour price change contributes most to PC1 while the 7-day price change contributes most to PC3.
 
 | Principal Component | price_change_percentage_24h | _7d | _14d | _30d | _60d | _200d | _1y |
 |----------|----------|----------| ----------| ----------| ----------| ----------| ----------|
@@ -29,9 +29,9 @@ In this challenge, we used our knowledge of Python and unsupervised learning wit
 
 6. Now using the PCA data, I repeated the process of creating an elbow plot to find the optimal number of clusters. Again, the best value for `k` appears to be 4. 
 
-7. Then, again now using the PCA data, I repeated the process of fitting the data with a k-means model with 4 clusters. I plotted the groups in a scatter plot with the Principal Components PC1 and PC2 as the axes. PC1 and PC2 capture the most variance (spread) in the data, so plotting them helps visualize the overall structure of the data in 2D. The plot shows how well the K-Means clustering has separated the data based on the first two principal components. There are four distinct clusters (Cluster 3 is now separate from Cluster 0).
+7. Then, again now using the PCA data, I repeated the process of fitting the data with a k-means model with 4 clusters. I plotted the groups in a scatter plot with the Principal Components PC1 and PC2 as the axes as well as another plot with PC1 and PC3 as the axes (to align better with the 24-hour and 7-day contributions to the primary components). PC1 and PC2 capture the most variance (spread) in the data, so plotting them helps visualize the overall structure of the data in 2D. The plot shows how well the K-Means clustering has separated the data based on the first two principal components. In both the PC2 vs PC1 and PC3 vs PC1 plots, there are four distinct clusters (Cluster 3 is now separate from Cluster 0).
    
-8. Finally, I compared the the elbow curves and the scatter plots before and after PCA and drew conclusions. Images of the plots are shown below.
+8. Finally, I compared the elbow curves and the scatter plots before and after PCA and drew conclusions. Images of the plots are shown below.
 
 ## Plots
 
