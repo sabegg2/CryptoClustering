@@ -2,14 +2,9 @@
 - Module 19 Challenge
 - Steph Abegg
 
-In this challenge, you'll use your knowledge of Python and unsupervised learning to predict if cryptocurrencies are affected by 24-hour or 7-day price changes.
+In this challenge, we used our knowledge of Python and unsupervised learning with k-means clustering to create a machine learning model that groups cryptocurrencies and predicts if cryptocurrencies are affected by 24-hour or 7-day price changes.
 
-For this module’s Challenge, you will create a machine learning model that groups cryptocurrencies. The purpose will be to assemble investment portfolios that are based on the profitability of those cryptocurrencies.
-
-
-This challenge demonstrates the usage of unsupervised learning with k-means clustering.
-
-Using the provided data on Crypto Currencies, containing 7 features, I explored clustering the data. The analysis, plots, and code can be found in Crypto_Clustering.ipynb
+My code for this be found in [Crypto_Clustering.ipynb](Crypto_Clustering.ipynb)
 
 ## Steps
 
