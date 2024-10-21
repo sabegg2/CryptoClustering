@@ -19,7 +19,7 @@ In this challenge, we used our knowledge of Python and unsupervised learning wit
 
 4. I then used Principal Component Analysis (PCA) to reduce the features of the scaled dataframe down to 3. The explained variance of these three features was 89.5%. (Some more detail: Dimensionality reduction with PCA is a statistical technique used to reduce the number of dimensions (features) in a dataset while retaining most of the variation or information present in the original data. The goal is to simplify the dataset, making it easier to visualize or analyze, without losing too much important information. Preserving 89.5% of the variance, the number of features was reduced from 7 to 3).
 
-4a. Although it as not required, I creating a loadings matrix to see how much each original feature contributes to each principal component. A higher absolute value of a loading indicates a stronger contribution. The following table indicates that the 200-day and 1-year contribute most to PC1 while the 14-day and 30-day contribute most to PC2.
+5. Although it as not required, I creating a loadings matrix to see how much each original feature contributes to each principal component. A higher absolute value of a loading indicates a stronger contribution. The following table indicates that the 200-day and 1-year contribute most to PC1 while the 14-day and 30-day contribute most to PC2.
 
 | Principal Component | price_change_percentage_24h | _7d | _14d | _30d | _60d | _200d | _1y |
 |----------|----------|----------| ----------| ----------| ----------| ----------| ----------|
