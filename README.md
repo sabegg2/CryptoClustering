@@ -26,5 +26,5 @@ Overall, using PCA made the outliers more obvious, however, it does not make clu
 
 ## Plots
 
-<img src="images/elbow_plots.png" width=400>
-<img src="images/cluster_plots.png" width=400>
+<img src="images/elbow_plots.png" width=700>
+<img src="images/cluster_plots.png" width=700>
